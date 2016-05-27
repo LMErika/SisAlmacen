@@ -108,6 +108,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Controllers\CrudParametroController.cs" />
     <Compile Include="Controllers\InicioController.cs" />
     <Compile Include="Controllers\IntranetController.cs" />
     <Compile Include="Global.asax.cs">
@@ -557,7 +558,9 @@
   <ItemGroup>
     <Content Include="Views\Intranet\Principal.cshtml" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Content Include="Views\CrudParametro\ListarParametro.cshtml" />
+  </ItemGroup>
   <ItemGroup>
     <Content Include="Bootstrap\assets\css\style.css.map" />
     <Content Include="Bootstrap\assets\fonts\custom-set.eot" />
