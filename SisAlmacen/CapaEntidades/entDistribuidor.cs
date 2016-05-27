@@ -8,7 +8,7 @@ namespace CapaEntidades
 {
     public class entDistribuidor
     {
-        public int idDistribuidor { get; set; }
+        public int idDistribuidor { get; set; }        
         public String RazonSocial { get; set; }
         public String Ruc { get; set; }
         public String Direccion { get; set; }
