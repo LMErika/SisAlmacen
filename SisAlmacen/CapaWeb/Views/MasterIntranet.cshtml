@@ -26,30 +26,32 @@
             <div class="sidebar-collapse">
                 <ul class="nav metismenu" id="side-menu">
                     <li class="nav-header">
-                        <div class="dropdown profile-element">
-                            <span>
-                                @{CapaEntidades.entUsuario u = (CapaEntidades.entUsuario)Session["usuarito"];}
-                                <img alt="image" class="img-circle" src="~/Imagenes/Usuarios/@u.fotografia" />
-                                <img src="~/Imagenes/Usuarios/erika.jpg" />
+                        <div class="dropdown profile-element">                            
+                                <span>
+                                    <center>
+                                        @{CapaEntidades.entUsuario u = (CapaEntidades.entUsuario)Session["usuarito"];}
+                                        <img alt="image" class="img-circle" src="~/Imagenes/Usuarios/@u.fotografia" />
+                                    </center>
                             </span>
                             <a data-toggle="dropdown" class="dropdown-toggle" href="#">
                                 <span class="clear">
                                     <span class="block m-t-xs">
                                         <strong class="font-bold">
-                                            @{CapaEntidades.entUsuario usu =
-                                            (CapaEntidades.entUsuario)Session["usuarito"];}
-                                            @usu.Nombre  @usu.ApellidoPaterno
+                                            <center>
+                                                
+                                                @u.Nombre  @u.ApellidoPaterno
+                                            </center>
                                         </strong>
-                                    </span> <span class="text-muted text-xs block">Administrador de Almacen <b class="caret"></b></span>
+                                    </span> <span class="text-muted text-xs block" align="center">Administrador de Almacen<b class="caret"></b></span>
                                 </span>
                             </a>
-                            <ul class="dropdown-menu animated fadeInRight m-t-xs">
-                                <li><a href="profile.html">Profile</a></li>
-                                <li><a href="contacts.html">Contacts</a></li>
-                                <li><a href="mailbox.html">Mailbox</a></li>
-                                <li class="divider"></li>
-                                <li><a href="login.html">Logout</a></li>
-                            </ul>
+                                <ul class="dropdown-menu animated fadeInRight m-t-xs">
+                                    <li><a href="profile.html">Profile</a></li>
+                                    <li><a href="contacts.html">Contacts</a></li>
+                                    <li><a href="mailbox.html">Mailbox</a></li>
+                                    <li class="divider"></li>
+                                    <li><a href="login.html">Logout</a></li>
+                                </ul>                
                         </div>
                         <div class="logo-element">
                             IN+
@@ -333,7 +335,7 @@
 
     <!-- Custom and plugin javascript -->
     <script src="~/Bootstrap/BootsIntranet/js/inspinia.js"></script>
-    <script src="~/Bootstrap/BootsIntranet/js/plugins/pace/pace.min.js"></script>
+    
 
 
 </body>
