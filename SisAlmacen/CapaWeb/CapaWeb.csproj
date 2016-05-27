@@ -108,6 +108,8 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Controllers\CrudDetalleParametroController.cs" />
+    <Compile Include="Controllers\CrudDistribuidorController.cs" />
     <Compile Include="Controllers\CrudParametroController.cs" />
     <Compile Include="Controllers\InicioController.cs" />
     <Compile Include="Controllers\IntranetController.cs" />
@@ -515,6 +517,7 @@
     <Content Include="Bootstrap\theme\atropos-responsive-website-template-WB05SR527\comments4658.html" />
     <Content Include="Bootstrap\theme\atropos-responsive-website-template-WB05SR527\comments9ba9.html" />
     <Content Include="Global.asax" />
+    <Content Include="Imagenes\Usuarios\eduard.jpg" />
     <Content Include="Imagenes\Usuarios\erika.jpg" />
     <Content Include="Script Base\Script SisAlmacen.sql" />
     <Content Include="Web.config" />
@@ -632,6 +635,12 @@
     <Content Include="Bootstrap\BootsIntranet\fonts\glyphicons-halflings-regulard41d.eot" />
     <Content Include="Bootstrap\theme\atropos-responsive-website-template-WB05SR5274090" />
     <Content Include="Bootstrap\theme\atropos-responsive-website-template-WB05SR527\commentsfdb0" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\CrudDetalleParametro\ListarDetalleParametro.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\CrudDistribuidor\ListadoDistribuidor.cshtml" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
