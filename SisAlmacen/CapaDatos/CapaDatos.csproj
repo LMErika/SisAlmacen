@@ -41,6 +41,7 @@
   <ItemGroup>
     <Compile Include="Conexion.cs" />
     <Compile Include="datDetalleParametro.cs" />
+    <Compile Include="datDistribuidor.cs" />
     <Compile Include="datParametro.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Usuario.cs" />

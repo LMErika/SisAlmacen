@@ -40,6 +40,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="entDetalleParametro.cs" />
+    <Compile Include="entDistribuidor.cs" />
     <Compile Include="entParametro.cs" />
     <Compile Include="entUsuario.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
