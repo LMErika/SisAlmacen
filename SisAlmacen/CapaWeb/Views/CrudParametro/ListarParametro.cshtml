@@ -57,13 +57,16 @@
                                 <h4 class="modal-title" id="myModalLabel">Nuevo Parametro</h4>
                             </div>
                             <div class="modal-body">
-                                <input type="email" placeholder="Enter email" class="form-control">
-                                ...
+                                <form action="Nuevo/CrudParametroController" method="post">
+                                    <input type="text" placeholder="Ingrese Codigo" class="form-control" name="txtCodigo"><br />
+                                    <input type="text" placeholder="Ingrese Descripcion" class="form-control" name="txtDescripcion">
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-default" data-dismiss="modal">Cerrar</button>
+                                        <button type="submit" class="btn btn-primary" name="btnGuardar">Guardar</button>
+                                    </div>
+                                </form>
                             </div>
-                            <div class="modal-footer">
-                                <button type="button" class="btn btn-default" data-dismiss="modal">Cerrar</button>
-                                <button type="button" class="btn btn-primary">Guardar</button>
-                            </div>
+
                         </div>
                     </div>
                 </div>
