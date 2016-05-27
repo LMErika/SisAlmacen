@@ -1,0 +1,87 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Ketal Moda</title>
+    <meta name="keywords" content="HTML5,CSS3,Template" />
+    <meta name="description" content="" />
+    <meta name="keywords" content="HTML5,CSS3,Template" />
+    <meta name="description"><!-- mobile settings -->
+    <meta name="viewport" content="width=device-width, maximum-scale=1, initial-scale=1, user-scalable=0" />
+
+    <!-- WEB FONTS -->
+    <link href="~/Bootstrap/assets/css/css9292.css?family=Open+Sans:300,400,700,800" rel="stylesheet" type="text/css" />
+
+    <!-- CORE CSS -->
+    <link href="~/Bootstrap/assets/plugins/bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+    <link href="~/Bootstrap/assets/css/font-awesome.css" rel="stylesheet" type="text/css" />
+    <link href="~/Bootstrap/assets/plugins/owl-carousel/owl.carousel.css" rel="stylesheet" type="text/css" />
+    <link href="~/Bootstrap/assets/plugins/owl-carousel/owl.theme.css" rel="stylesheet" type="text/css" />
+    <link href="~/Bootstrap/assets/plugins/owl-carousel/owl.transitions.css" rel="stylesheet" type="text/css" />
+    <link href="~/Bootstrap/assets/plugins/magnific-popup/magnific-popup.css" rel="stylesheet" type="text/css" />
+    <link href="~/Bootstrap/assets/css/animate.css" rel="stylesheet" type="text/css" />
+    <link href="~/Bootstrap/assets/css/superslides.css" rel="stylesheet" type="text/css" />
+
+    <!-- REVOLUTION SLIDER -->
+    <link href="~/Bootstrap/assets/plugins/revolution-slider/css/settings.css" rel="stylesheet" type="text/css" />
+
+    <!-- THEME CSS -->
+    <link href="~/Bootstrap/assets/css/essentials.css" rel="stylesheet" type="text/css" />
+    <link href="~/Bootstrap/assets/css/layout.css" rel="stylesheet" type="text/css" />
+    <link href="~/Bootstrap/assets/css/layout-responsive.css" rel="stylesheet" type="text/css" />
+    <link href="~/Bootstrap/assets/css/color_scheme/orange.css" rel="stylesheet" type="text/css" /><!-- orange: default style -->
+    <!-- STYLESWITCHER - REMOVE ON PRODUCTION/DEVELOPMENT -->
+    <link href="~/Bootstrap/assets/plugins/styleswitcher/styleswitcher.css" rel="stylesheet" type="text/css" />
+
+    <!-- Morenizr -->
+    <script type="text/javascript" src="~/Bootstrap/assets/plugins/modernizr.min.js"></script>
+</head>
+<body>
+    <!-- Available classes for body: boxed , pattern1...pattern10 . Background Image - example add: data-background="assets/images/boxed_background/1.jpg"  -->
+    <!-- Top Bar -->
+    <header id="topHead" class=fixed
+        <div class="container">
+
+
+        </div>
+    </header>
+    <!-- /Top Bar -->
+    <!-- TOP NAV -->
+    <header id="topNav" class="topHead">
+        <!-- remove class="topHead" if no topHead used! -->
+        <div class="container">
+
+            <!-- Mobile Menu Button -->
+            <button class="btn btn-mobile" data-toggle="collapse" data-target=".nav-main-collapse">
+                <i class="fa fa-bars"></i>
+            </button>
+
+            <!-- Logo text or image -->
+            <a class="logo" href="index-2.html">
+                <img src="~/Bootstrap/assets/images/logo.png" alt="Atropos" />
+            </a>
+
+            <!-- Top Nav -->
+            <div class="navbar-collapse nav-main-collapse collapse pull-right">
+                <nav class="nav-main mega-menu">
+                    <ul class="nav nav-pills nav-main scroll-menu">
+                        <li class="dropdown active">
+                            <a href="@Url.Action("Index","Inicio")" class="dropdown-toggle">	<b>Inicio</b></a>
+
+                        </li>
+                        <div class="pull-right nav signin-dd">
+                            <li class="dropdown mega-menu-item mega-menu-two-columns">
+                                <a href="@Url.Action("login","Intranet")" class="dropdown-toggle"><i class="fa fa-users"></i><span class="hidden-xs"><strong> Iniciar Sesión</strong></span></a>
+                            </li>
+                        </div>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <div>
+        @RenderBody()
+    </div>
+</body>
+</html>
