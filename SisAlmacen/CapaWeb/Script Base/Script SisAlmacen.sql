@@ -140,3 +140,102 @@ create procedure eliminarParametro
 @idParametro int
 as
 	delete from Parametro where idParametro = @idParametro 
+
+/*Procedimientos Detalle Parametro*/
+
+create procedure ListarDetalleParametro
+as
+	select d.idDetallepmt,d.Descripcion,d.estado,p.idParametro,p.Descripcion as 'Parametro'
+	from DetalleParametro d
+	inner join Parametro p on(d.idParametro = p.idParametro)
+	where d.estado = 1
+
+create procedure InsertarDetalleParametro
+@descripcion varchar(30),
+@idParametro int
+as
+	insert into DetalleParametro(Descripcion,idParametro,estado)
+	values(@descripcion,@idParametro,1)
+
+create procedure BuscarDetalleParametro
+@idDetalle int
+as
+	select d.idDetallepmt,d.Descripcion,d.estado,p.idParametro,p.Descripcion as 'Parametro'
+	from DetalleParametro d
+	inner join Parametro p on(d.idParametro = p.idParametro)
+	where d.idDetallepmt = @idDetalle
+
+create procedure editarDetalleParametro
+@descripcion varchar(30),
+@estado bit,
+@idDetalle int
+as
+	update DetalleParametro
+	set 
+	Descripcion = @descripcion,
+	estado = @estado
+	where idDetallepmt = @idDetalle
+
+
+create procedure eliminarDetalleParametro
+@estado bit,
+@idDetalle int
+as
+	update DetalleParametro
+	set
+	estado = @estado
+	where idDetallepmt = @idDetalle
+
+
+/*Procedimientos Distribuidor*/
+
+create procedure ListarDistribuidor
+as	
+	select idDistribuidor,RazonSocial,Ruc,Direccion,Telefono,Email,estado
+	from Distribuidor where estado = 1 
+
+create procedure InsertarDistribuidor
+@RazonSocial varchar(50),
+@Ruc varchar(50),
+@Direccion varchar(50),
+@Telefono char(10),
+@Email varchar(50)
+as
+	insert into Distribuidor(RazonSocial,Ruc,Direccion,Telefono,Email,estado)
+	values(@RazonSocial,@Ruc,@Direccion,@Telefono,@Email,1)
+
+create procedure BuscarDistribuidor
+@idDistribuidor int
+as
+	select idDistribuidor,RazonSocial,Ruc,Direccion,Telefono,Email,estado
+	from Distribuidor where idDistribuidor = @idDistribuidor
+
+
+create procedure EditarDistribuidor
+@RazonSocial varchar(50),
+@Ruc varchar(50),
+@Direccion varchar(50),
+@Telefono char(10),
+@Email varchar(50),
+@estado bit,
+@idDistribuidor int
+as
+	update Distribuidor
+	set
+	RazonSocial = @RazonSocial,
+	Ruc = @Ruc,
+	Direccion = @Direccion,
+	Telefono = @Telefono,
+	Email = @Email,
+	estado = @estado
+	where idDistribuidor = @idDistribuidor
+
+
+create procedure EliminarDistribuidor
+@estado bit,
+@idDistribuidor int
+as
+	update Distribuidor
+	set
+	estado = @estado
+	where idDistribuidor = @idDistribuidor
