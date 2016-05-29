@@ -863,7 +863,10 @@ fieldset[disabled] .btn-danger.active {
   border-color: #ef6776;
 }
 .btn-link {
-  color: inherit;
+  background-color: #1ab394;
+  border-color: #1ab394;
+  color: #FFFFFF;
+  /*color: inherit;*/
 }
 .btn-link:hover,
 .btn-link:focus,

@@ -510,6 +510,7 @@
     <Content Include="Bootstrap\BootsIntranet\js\plugins\validate\jquery.validate.min.js" />
     <Content Include="Bootstrap\BootsIntranet\js\plugins\video\responsible-video.js" />
     <Content Include="Bootstrap\BootsIntranet\js\plugins\wow\wow.min.js" />
+    <Content Include="Bootstrap\ScriptModal\JavaParametro.js" />
     <Content Include="Bootstrap\theme\atropos-responsive-website-template-WB05SR527.html" />
     <Content Include="Bootstrap\theme\atropos-responsive-website-template-WB05SR527124c.html" />
     <Content Include="Bootstrap\theme\atropos-responsive-website-template-WB05SR527\comments.html" />
@@ -641,6 +642,12 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Views\CrudDistribuidor\ListadoDistribuidor.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\CrudParametro\Nuevo.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\CrudParametro\Editar.cshtml" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
