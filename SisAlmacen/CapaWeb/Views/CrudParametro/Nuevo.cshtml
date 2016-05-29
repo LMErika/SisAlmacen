@@ -1,0 +1,14 @@
+﻿@{
+    ViewBag.Title = "Nuevo";
+}
+
+<!--<h2>Nuevo</h2>-->
+
+<form action="Nuevo/CrudParametroController" method="post">
+    <input type="text" placeholder="Ingrese Codigo" class="form-control" name="txtCodigo"><br />
+    <input type="text" placeholder="Ingrese Descripcion" class="form-control" name="txtDescripcion">
+    <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Cerrar</button>
+        <button type="submit" class="btn btn-primary" name="btnGuardar"><i class="fa fa-save"></i> Guardar</button>
+    </div>
+</form>

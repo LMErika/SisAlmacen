@@ -1,0 +1,14 @@
+﻿@model CapaEntidades.entParametro
+@{
+    ViewBag.Title = "Editar";
+}
+
+<!--<h2>Editar</h2>-->
+<form action="Editar/CrudParametroController" method="post">
+    <input type="text" placeholder="Ingrese Codigo" class="form-control" name="txtCodigo" value="@Html.DisplayFor(model=>model.Codigo)"><br />
+    <input type="text" placeholder="Ingrese Descripcion" class="form-control" name="txtDescripcion" value="@Html.DisplayFor(model=> model.Descripcion)">
+    <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Cerrar</button>
+        <button type="submit" class="btn btn-primary" name="btnGuardar"><i class="fa fa-refresh"></i> Actualizar</button>
+    </div>
+</form>
