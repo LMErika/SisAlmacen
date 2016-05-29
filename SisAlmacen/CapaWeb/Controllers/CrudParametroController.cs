@@ -23,10 +23,20 @@ namespace CapaWeb.Controllers
             return View(lista);
         }
 
+
+        #region Nuevo
+
+        [HttpGet]
+        public ActionResult Nuevo()
+        {
+            return View(); 
+        }
+        
         [HttpPost]
         public ActionResult Nuevo(FormCollection frm)
         {
-            try {
+            try
+            {
                 if (frm["btnGuardar"] != null)
                 {
                     entParametro p = new entParametro();
@@ -34,18 +44,34 @@ namespace CapaWeb.Controllers
                     p.Descripcion = frm["txtDescripcion"];
 
                     Boolean inserta = LogParametro.Instancia.InsertarParametro(p);
-                    if (inserta != false) {
+                    if (inserta != false)
+                    {
                         return RedirectToAction("ListarParametro");
                     }
-                    else {
+                    else
+                    {
                         return View();
                     }
                 }
-                else {
+                else
+                {
                     return RedirectToAction("ListarParametro");
                 }
             }
             catch (Exception e) { throw e; }
+        }
+        
+        #endregion Nuevo
+
+        [HttpGet]
+        public ActionResult Editar(int idParametro) {
+            try {
+                entParametro d = LogParametro.Instancia.BuscarParametro(idParametro);
+                return View(d);
+            }
+            catch (Exception e) {
+                throw e;
+            }
         }
 
     }
